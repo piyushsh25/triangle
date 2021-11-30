@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-brand"></div>
+        <ul class="unordered nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">is triangle? </a>
+            </li>
+            <li class="list-item-inline ">
+                <a class="link link-active" href="quiz.html">quiz</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="hypo.html">hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="area.html">area</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Triangle quiz</h1>
+    <form class="quiz-form">
+        <div class="question-container">
+            <p>This type of triangle has one 90 degree angle.</p>
+            <label><input type="radio" name="question1" value="right"/>right</label>
+            <label><input type="radio" name="question1" value="other"/>other</label>
+            <label><input type="radio" name="question1" value="othet"/>othet</label>
+        </div>
+        <div class="question-container">
+            <p>All 3 interior angles of a triangle add up to </p>
+            <label><input type="radio" name="question2" value="100"/>100</label> 
+            <label><input type="radio" name="question2" value="200"/>200</label>
+            <label><input type="radio" name="question2" value="180"/>180</label>
+        </div>
+
+    </form>
+    <button class="primary" id="submit-answer-btn">Submit answers</button>
+    <div id="output-two"></div>
+    <script src="quiz.js"></script>
+</body>
+</html>
