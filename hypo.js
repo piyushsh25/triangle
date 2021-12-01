@@ -7,10 +7,15 @@ const sumOfSquares=a*a+b*b
 return sumOfSquares
 }
 function calculateHypotenuse(){
+    if(Number(sides[0].value)>0 && Number(sides[1].value>0)){
 const sumOfSquares = calculateSumOfSquares(Number(sides[0].value),Number(sides[1].value));
 const lengthOfHypotenuse=Math.sqrt(sumOfSquares);
 output.innerText="The length of hypotenuse is "+ lengthOfHypotenuse;
-console.log(lengthOfHypotenuse);
 }
+else{
+    output.innerText="Error!!";
+}
+}
+
 
 hypoBtn.addEventListener("click",calculateHypotenuse)

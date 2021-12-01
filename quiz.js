@@ -2,7 +2,7 @@ const quizForm=document.querySelector(".quiz-form");
 const buttonB=document.querySelector("#submit-answer-btn");
 const outputB=document.querySelector("#output-two")
 
-const correctAnswers=["right","180"];
+const correctAnswers=["right","180","3","3","90"];
 
 function calculateScore(){
 let score=0;
