@@ -4,7 +4,7 @@ const outputB=document.querySelector("#output-two")
 
 const correctAnswers=["right","180","3","3","90"];
 
-function calculateScore(){
+const calculateScore=()=>{
 let score=0;
 let index=0; 
 const formResults= new FormData(quizForm);
